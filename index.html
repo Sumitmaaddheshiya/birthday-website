@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Sakshi!</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        h1 {
+            font-size: 50px;
+            margin-top: 20vh;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px white; }
+            to { text-shadow: 0 0 20px yellow; }
+        }
+        .message {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #ff69b4;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Happy Birthday, Sakshi! 🎂</h1>
+    <p class="message">Wishing you a day filled with love, joy, and endless happiness! 💖</p>
+    <button onclick="showSurprise()">Click for a Surprise!</button>
+    <p id="surprise" style="display:none; font-size: 24px; margin-top: 20px;">🎁 Sakshi Di, Surprise yah hai ki koi surprise nahi hai ! 🎁</p>
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+</body>
+</html>
